@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#004582;
+    font-family: sans-serif;
+    
+    /* Este es un comentario en CSS */
+}
+/* Barra de arriba */
+header{
+    background-color: #1f394f;
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 80px;
+    margin-right: 15px;
+    
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 15px;
+    
+}
+
+.nav link{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a:hover{
+    color:#d3cbc6; 
+
+}
+
+@media (max-width:700px){ 
+    header{
+        flex-direction: column;
+
+    }
+     nav{
+       padding: 10px 0px;
+     }
+   }
+
+   @media (max-width:450px){ 
+    header{
+        flex-direction: column;
+        display: flex;
+        
+        
+
+
+    }
+
+   
+
+     nav{
+       padding: 10px 0px;
+     }
+   }
+
+/* Foto del main index */
+
+.container1{
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.fotopresentacion{
+ width: 100%;
+ border-radius: 15px;
+box-shadow: 0px 3px 5px rgba(15,15,15 .5);
+}
+/* Main */
+
+.presentacioninicio {
+
+    line-height: 2;
+    word-spacing: 3;
+    padding: 25px;
+    text-align: center;
+    
+}
+
+.inicioh2{
+    text-align: center;
+    justify-content: center;
+}
+/* barra de abajo del todo/footer */
+footer{
+    background-color: #213f59;
+    padding: 10px;
+    
+    
+
+}
+
+
+/* redes */
+.iconos{
+   display: flex;
+   font-size: 20px;
+   
+   
+   
+}
+ul .iconos{
+    text-align: center;
+    height: 50px;
+    
+}
+
+
+/* Main de Reservanos (fotos) */
+.conteinerreservanos{
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.fotoreservanos1{
+    width: 100%;
+    border-radius: 15px;
+   box-shadow: 0px 3px 5px rgba(15,15,15 .5);
+}
+
+
+
+/* texto de Reservanos.html P */
+.reservanos{
+    line-height: 2;
+    word-spacing: 3;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Productos main.html P */
+.fotoproducto{
+
+width: 80vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+
+}
+
+
+.cardproducto{
+  width: 90%;
+  margin: 10%;
+  padding: 60px 0;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5em;
+  flex-wrap: wrap;
+
+}
+.carditem1{
+    background-color: aquamarine;
+    padding: 2%;
+    flex-basis: 280px;
+    max-width: 400px;
+    flex-grow: 1;
+}
+.cardcontend{
+width: 90%;
+margin: 0;
+}
+.cardpictu{
+width: 90%;
+margin: 3% auto;
+display: flex;
+
+background-color: azure;
+position: relative;
+bottom: 3em;
+}
+
+.cardimg{
+width: auto;
+
+}
+
