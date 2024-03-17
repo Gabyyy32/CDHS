@@ -11,22 +11,7 @@ body{
     /* Este es un comentario en CSS */
 }
 /* Barra de arriba */
-header{
-    background-color: #1f394f;
-    display: flex;
-    min-height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
 
-
-    
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
 .logo{
     display: flex;
     align-items: center;
@@ -37,49 +22,53 @@ a{
     
 }
 
-nav a{
-    font-weight: 600;
-    padding-right: 15px;
+.cards{
+    display: flex;
+    flex-direction:block;
     
-}
-
-.nav link{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav a:hover{
-    color:#d3cbc6; 
-
-}
-
-@media (max-width:700px){ 
-    header{
-        flex-direction: column;
-
     }
-     nav{
-       padding: 10px 0px;
-     }
-   }
-
-   @media (max-width:450px){ 
-    header{
-        flex-direction: column;
+    
+    div.fotoproducto{
         display: flex;
         
         
-
-
+        
+    
     }
+    
+    .navbar{
+        background-color: rgb(59, 20, 128) !important;
+        min-height: 90px;
+    
+    }
+    
+    .nav-item{
+        text-align: center;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    
+    .collapse{
+    display: flex;
+    
+    justify-content: center ;
+    }
+    
+    
+    
+    @media (max-width: 1065px) {
+        .cards {
+            flex-direction: column; /* Cambiar a disposición vertical */
+        }
+      }
+    
+      /* Estilos para dispositivos con ancho de pantalla mayor a 900px */
+    @media (min-width: 901px) {
+        .cards {
+          display: flex; /* Mantener disposición horizontal */
+        }
+      }
 
-   
-
-     nav{
-       padding: 10px 0px;
-     }
-   }
 
 /* Foto del main index */
 
@@ -170,7 +159,6 @@ width: 80vw;
 
 }
 
-
 .cardproducto{
   width: 90%;
   margin: 10%;
@@ -208,5 +196,63 @@ bottom: 3em;
 .cardimg{
 width: auto;
 
+}
+
+.fotoproducto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.fotoproducto figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 10px 25px rgb(0,0,0,0.50);
+    cursor: pointer;
+
+}
+.fotoproducto figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.fotoproducto figure .texto{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 18, 21, 0.619);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.fotoproducto figure:hover > .texto{
+    opacity: 1;
+    visibility: visible;
+
+}
+.fotoproducto figure:hover > .texto h3{
+    margin-top: 70px;
+    margin-bottom :15px; ;
+}
+.fotoproducto figure:hover > .texto h3 {
+    color:#fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin: 30px;
+}
+.fotoproducto figure:hover > .texto p{
+color: #fff;
+font-size: 15px;
+line-height: 1.5;
+width: 100%;
+max-width: 220px;
+margin: auto;
 }
 
